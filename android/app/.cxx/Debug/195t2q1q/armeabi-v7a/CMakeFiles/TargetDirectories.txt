@@ -1,0 +1,2 @@
+C:/Users/USER/Desktop/Edutech/bitlearn/android/app/.cxx/Debug/195t2q1q/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/USER/Desktop/Edutech/bitlearn/android/app/.cxx/Debug/195t2q1q/armeabi-v7a/CMakeFiles/rebuild_cache.dir

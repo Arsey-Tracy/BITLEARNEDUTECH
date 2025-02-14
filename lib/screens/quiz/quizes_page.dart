@@ -1,5 +1,50 @@
 import 'package:flutter/material.dart';
 
+class QuizCompletionPage extends StatelessWidget {
+  const QuizCompletionPage({super.key});
+  void _rewardUser(BuildContext context) {
+    //Reward amount (e.g., 0.001 BTC)
+    double rewardAmount = 0.001;
+
+    // Update the wallet
+    // WalletBalance.value += rewardAmount;
+
+    // show confirmation dialogue
+    showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+              title: const Text("Quiz Completed!"),
+              content: Text("You've been rewarded with $rewardAmount BTC!"),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context); // close dilogue
+                  },
+                  child: const Text("OK"),
+                )
+              ],
+            ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Complete Quiz'),
+        backgroundColor: Colors.blue,
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            _rewardUser(context);
+          },
+          child: const Text('Complete Quiz and Earn'),
+        ),
+      ),
+    );
+  }
+}
+
 class QuizPage extends StatefulWidget {
   const QuizPage({super.key});
 
@@ -159,3 +204,7 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 }
+
+// Wallet balance notifier
+// ignore: non_constant_identifier_names
+// ValueNotifier<double> WalletBalance = ValueNotifier(0.025);

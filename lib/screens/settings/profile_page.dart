@@ -35,12 +35,14 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             const Text(
-              'About Me',
+              'About Us',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             const Text(
-              'This is a brief description about the user. You can display more details here.',
+              '''This App is just a simple demo for bitlearn, the app is developed by a small team.
+Developed by Arsey, Keith, Shafic, and Pauline. we strive to revolutionize the education of Africa utilizing cutting edge technologies i.e AI and Blockchain. 
+we believe that knowledge is for everyone who seeks it, and that knowledge must be rewarding.''',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24),
